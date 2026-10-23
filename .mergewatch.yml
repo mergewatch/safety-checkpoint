@@ -1,7 +1,7 @@
-# v0.6.9 checkpoint config A — #713 R3 (mergewatch/mergewatch.ai#743)
+# v0.6.9 checkpoint config A' — #710 gate-equality baseline: same as A with enabled:false
 includePatterns: ["README.md"]
 safetyScore:
-  enabled: true
+  enabled: false
   areas:
     - name: Migrations
       patterns: ["**/migrations/**"]
