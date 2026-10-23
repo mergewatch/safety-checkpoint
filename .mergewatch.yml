@@ -1,8 +1,9 @@
-# v0.6.9 checkpoint config A' — #710 gate-equality baseline: same as A with enabled:false
-includePatterns: ["README.md"]
+# v0.6.9 checkpoint config B — #720 label checkpoint (mergewatch/mergewatch.ai#743)
 safetyScore:
-  enabled: false
+  enabled: true
+  label: true
+  bands: { risky: 1, caution: 2 }
   areas:
-    - name: Migrations
-      patterns: ["**/migrations/**"]
+    - name: Checkpoint
+      patterns: ["checkpoint/**"]
       level: risky
