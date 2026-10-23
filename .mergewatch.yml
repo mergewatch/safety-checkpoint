@@ -1,0 +1,8 @@
+# v0.6.9 checkpoint config A — #713 R3 (mergewatch/mergewatch.ai#743)
+includePatterns: ["README.md"]
+safetyScore:
+  enabled: true
+  areas:
+    - name: Migrations
+      patterns: ["**/migrations/**"]
+      level: risky
